@@ -1,0 +1,3115 @@
+{
+  "106": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "ExAM__Question_Template__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "ExAM__Question_Label__c"
+        },
+        {
+          "name": "Question_Short_Label__c"
+        },
+        {
+          "name": "Response_Date__c"
+        },
+        {
+          "name": "ExAM__Total_Score__c"
+        }
+      ],
+      "object": "ExAM__Questionnaire_Response__c"
+    }
+  },
+  "107": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Question_Short__c"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "ExAM__Question_Template__c"
+    }
+  },
+  "108": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "106",
+      "left_key": [
+        "ExAM__Question_Template__c"
+      ],
+      "right_select": [
+        "Question_Short__c"
+      ],
+      "right": "107",
+      "relationship": "ExAM__Question_Template__c"
+    }
+  },
+  "109": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "test survey",
+      "alias": "test_survey",
+      "source": "108"
+    }
+  },
+  "110": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Initiative__c"
+        },
+        {
+          "name": "of_Months__c"
+        },
+        {
+          "name": "Active__c"
+        },
+        {
+          "name": "Bypass_Validations_on_Change__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "Current_Stage_Transition_Date__c"
+        },
+        {
+          "name": "Current_Sub_Initiative_Stage__c"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Initiative_Number__c"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "Metric_Unit_Symbol__c"
+        },
+        {
+          "name": "Point_of_Contact_Email__c"
+        },
+        {
+          "name": "Point_of_Contacts_Count__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Sub_Initiative_Number_Full__c"
+        },
+        {
+          "name": "Sub_Initiative_Description__c"
+        },
+        {
+          "name": "Sub_Initiative_End_Date__c"
+        },
+        {
+          "name": "Sub_Initiative_Full_Number__c"
+        },
+        {
+          "name": "Sub_Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Sub_Initiative_Number__c"
+        },
+        {
+          "name": "Sub_Initiative_Start_Date__c"
+        },
+        {
+          "name": "SystemModstamp"
+        }
+      ],
+      "object": "Sub_Initiative__c"
+    }
+  },
+  "111": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Strategic_Goal__c"
+        },
+        {
+          "name": "of_Months__c"
+        },
+        {
+          "name": "of_Sub_Initiatives__c"
+        },
+        {
+          "name": "of_Sub_Initiatives_2__c"
+        },
+        {
+          "name": "Accountable_Owner_Email__c"
+        },
+        {
+          "name": "Active__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Initiative_End_Date__c"
+        },
+        {
+          "name": "Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Initiative_Number__c"
+        },
+        {
+          "name": "Initiative_Start_Date__c"
+        },
+        {
+          "name": "Initiative_Type__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "Metric_Unit_Symbol__c"
+        },
+        {
+          "name": "Outcome_Statement__c"
+        },
+        {
+          "name": "Project_Manager_Email__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Responsible_Owner_Email__c"
+        },
+        {
+          "name": "Responsible_Office__c"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "PSO_Comments__c"
+        }
+      ],
+      "object": "Initiative__c"
+    }
+  },
+  "112": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "isActive__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "NumberOrder__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "SystemModstamp"
+        }
+      ],
+      "object": "Strategic_Goal__c"
+    }
+  },
+  "113": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "110",
+      "left_key": [
+        "Initiative__c"
+      ],
+      "right_select": [
+        "Strategic_Goal__c",
+        "of_Months__c",
+        "of_Sub_Initiatives__c",
+        "of_Sub_Initiatives_2__c",
+        "Accountable_Owner_Email__c",
+        "Active__c",
+        "CreatedDate",
+        "IsDeleted",
+        "Initiative_End_Date__c",
+        "Initiative_Metric__c",
+        "Name",
+        "Initiative_Number__c",
+        "Initiative_Start_Date__c",
+        "Initiative_Type__c",
+        "LastActivityDate",
+        "LastModifiedDate",
+        "LastReferencedDate",
+        "LastViewedDate",
+        "Metric_Unit_Symbol__c",
+        "Outcome_Statement__c",
+        "Project_Manager_Email__c",
+        "Id",
+        "Responsible_Owner_Email__c",
+        "Responsible_Office__c",
+        "SystemModstamp",
+        "PSO_Comments__c"
+      ],
+      "right": "111",
+      "relationship": "Initiative__c"
+    }
+  },
+  "114": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "113",
+      "left_key": [
+        "Initiative__c.Strategic_Goal__c"
+      ],
+      "right_select": [
+        "isActive__c",
+        "CreatedDate",
+        "IsDeleted",
+        "LastActivityDate",
+        "LastModifiedDate",
+        "LastReferencedDate",
+        "LastViewedDate",
+        "NumberOrder__c",
+        "Id",
+        "Name",
+        "SystemModstamp"
+      ],
+      "right": "112",
+      "relationship": "Initiative__c.Strategic_Goal__c"
+    }
+  },
+  "115": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "MyVA Dashboard",
+      "alias": "MyVA_Dashboard",
+      "source": "114"
+    }
+  },
+  "116": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Initiative__c"
+        },
+        {
+          "name": "Metric_Value__c"
+        },
+        {
+          "name": "Interim_Target_Value__c"
+        },
+        {
+          "name": "FY_Target_Value__c"
+        },
+        {
+          "name": "Accountable_Owner__c"
+        },
+        {
+          "name": "Comments__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "Current_FY__c"
+        },
+        {
+          "name": "Data_Not_Available__c"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Enterprise_Action__c"
+        },
+        {
+          "name": "Executive_Liaison__c"
+        },
+        {
+          "name": "First_Month_of_Year__c"
+        },
+        {
+          "name": "Initiative_Active__c"
+        },
+        {
+          "name": "Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Initiative_Name__c"
+        },
+        {
+          "name": "Input_Month__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "Metric_Reporting_Period__c"
+        },
+        {
+          "name": "Metric_Source__c"
+        },
+        {
+          "name": "On_Off_Track__c"
+        },
+        {
+          "name": "Project_Manager__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Responsible_Owner__c"
+        },
+        {
+          "name": "Sponsor__c"
+        },
+        {
+          "name": "SystemModstamp"
+        }
+      ],
+      "object": "Initiative_Monthly_Entry__c"
+    }
+  },
+  "117": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Strategic_Goal__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Initiative_Number__c"
+        },
+        {
+          "name": "of_Months_Missing_Interim_Target_Value__c"
+        },
+        {
+          "name": "of_Sub_Initiatives_2__c"
+        },
+        {
+          "name": "of_Sub_Initiatives__c"
+        },
+        {
+          "name": "Accountable_Owner_Email__c"
+        },
+        {
+          "name": "Active__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Executive_Liaison_Email__c"
+        },
+        {
+          "name": "Initiative_End_Date__c"
+        },
+        {
+          "name": "Initiative_Metric__c"
+        },
+        {
+          "name": "Initiative_Start_Date__c"
+        },
+        {
+          "name": "Initiative_Type__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "Metric_Reporting_Period__c"
+        },
+        {
+          "name": "Metric_Source__c"
+        },
+        {
+          "name": "Metric_Unit_Symbol__c"
+        },
+        {
+          "name": "Minimum_Metric_Value__c"
+        },
+        {
+          "name": "Outcome_Statement__c"
+        },
+        {
+          "name": "Project_Manager_Email__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Responsible_Owner_Email__c"
+        },
+        {
+          "name": "Responsible_Office__c"
+        },
+        {
+          "name": "Sponsor_Email__c"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "PSO_Comments__c"
+        }
+      ],
+      "object": "Initiative__c"
+    }
+  },
+  "118": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "isActive__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "NumberOrder__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "SystemModstamp"
+        }
+      ],
+      "object": "Strategic_Goal__c"
+    }
+  },
+  "119": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "116",
+      "left_key": [
+        "Initiative__c"
+      ],
+      "right_select": [
+        "Strategic_Goal__c",
+        "Name",
+        "Initiative_Number__c",
+        "of_Months_Missing_Interim_Target_Value__c",
+        "of_Sub_Initiatives_2__c",
+        "of_Sub_Initiatives__c",
+        "Accountable_Owner_Email__c",
+        "Active__c",
+        "CreatedDate",
+        "IsDeleted",
+        "Executive_Liaison_Email__c",
+        "Initiative_End_Date__c",
+        "Initiative_Metric__c",
+        "Initiative_Start_Date__c",
+        "Initiative_Type__c",
+        "LastActivityDate",
+        "LastModifiedDate",
+        "LastReferencedDate",
+        "LastViewedDate",
+        "Metric_Reporting_Period__c",
+        "Metric_Source__c",
+        "Metric_Unit_Symbol__c",
+        "Minimum_Metric_Value__c",
+        "Outcome_Statement__c",
+        "Project_Manager_Email__c",
+        "Id",
+        "Responsible_Owner_Email__c",
+        "Responsible_Office__c",
+        "Sponsor_Email__c",
+        "SystemModstamp",
+        "PSO_Comments__c"
+      ],
+      "right": "117",
+      "relationship": "Initiative__c"
+    }
+  },
+  "120": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "119",
+      "left_key": [
+        "Initiative__c.Strategic_Goal__c"
+      ],
+      "right_select": [
+        "isActive__c",
+        "CreatedDate",
+        "IsDeleted",
+        "LastActivityDate",
+        "LastModifiedDate",
+        "LastReferencedDate",
+        "LastViewedDate",
+        "NumberOrder__c",
+        "Id",
+        "Name",
+        "SystemModstamp"
+      ],
+      "right": "118",
+      "relationship": "Initiative__c.Strategic_Goal__c"
+    }
+  },
+  "121": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "MyVA Dashboard Initiatives with Monthly",
+      "alias": "MyVA_Dashboard_Initiatives_with_Monthly",
+      "source": "120"
+    }
+  },
+  "122": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Sub_Initiative__c"
+        },
+        {
+          "name": "to_Target__c"
+        },
+        {
+          "name": "Accountable_Owner__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "Current_FY__c"
+        },
+        {
+          "name": "Data_Not_Available__c"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Funding__c"
+        },
+        {
+          "name": "FY_Target_Value__c"
+        },
+        {
+          "name": "General_Comments__c"
+        },
+        {
+          "name": "Input_Month__c"
+        },
+        {
+          "name": "Interim_Target_Value__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "Metric_Reporting_Period__c"
+        },
+        {
+          "name": "Metric_Source__c"
+        },
+        {
+          "name": "Milestones_Completed_Upcoming__c"
+        },
+        {
+          "name": "Metric_Value__c"
+        },
+        {
+          "name": "On_Off_Track__c"
+        },
+        {
+          "name": "Point_of_Contact__c"
+        },
+        {
+          "name": "Policy__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Requests_Actions_for_Leadership__c"
+        },
+        {
+          "name": "Risks__c"
+        },
+        {
+          "name": "Staffing__c"
+        },
+        {
+          "name": "Phase_Transition_Date__c"
+        },
+        {
+          "name": "Status__c"
+        },
+        {
+          "name": "Sub_Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Sub_Initiative_Phase__c"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "Technology__c"
+        }
+      ],
+      "object": "Sub_Initiative_Monthly_Entry__c"
+    }
+  },
+  "123": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Initiative__c"
+        },
+        {
+          "name": "of_Months_Missing_Interim_Target_Value__c"
+        },
+        {
+          "name": "Active__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Initiative_Number__c"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "Metric_Reporting_Period__c"
+        },
+        {
+          "name": "Metric_Source__c"
+        },
+        {
+          "name": "Metric_Unit_Symbol__c"
+        },
+        {
+          "name": "Minimum_Metric_Value__c"
+        },
+        {
+          "name": "Point_of_Contact_Email__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Sub_Initiative_Number_Full__c"
+        },
+        {
+          "name": "Sub_Initiative_Description__c"
+        },
+        {
+          "name": "Sub_Initiative_End_Date__c"
+        },
+        {
+          "name": "Sub_Initiative_Full_Number__c"
+        },
+        {
+          "name": "Sub_Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Sub_Initiative_Number__c"
+        },
+        {
+          "name": "Sub_Initiative_Start_Date__c"
+        },
+        {
+          "name": "SystemModstamp"
+        }
+      ],
+      "object": "Sub_Initiative__c"
+    }
+  },
+  "124": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "of_Months_Missing_Interim_Target_Value__c"
+        },
+        {
+          "name": "of_Sub_Initiatives__c"
+        },
+        {
+          "name": "of_Sub_Initiatives_2__c"
+        },
+        {
+          "name": "Accountable_Owner_Email__c"
+        },
+        {
+          "name": "Active__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Executive_Liaison_Email__c"
+        },
+        {
+          "name": "Initiative_End_Date__c"
+        },
+        {
+          "name": "Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Initiative_Number__c"
+        },
+        {
+          "name": "Initiative_Start_Date__c"
+        },
+        {
+          "name": "Initiative_Type__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "Metric_Reporting_Period__c"
+        },
+        {
+          "name": "Metric_Source__c"
+        },
+        {
+          "name": "Metric_Unit_Symbol__c"
+        },
+        {
+          "name": "Minimum_Metric_Value__c"
+        },
+        {
+          "name": "Outcome_Statement__c"
+        },
+        {
+          "name": "Project_Manager_Email__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Responsible_Owner_Email__c"
+        },
+        {
+          "name": "Responsible_Office__c"
+        },
+        {
+          "name": "Sponsor_Email__c"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "PSO_Comments__c"
+        },
+        {
+          "name": "Strategic_Goal__c"
+        }
+      ],
+      "object": "Initiative__c"
+    }
+  },
+  "125": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "isActive__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "NumberOrder__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "SystemModstamp"
+        }
+      ],
+      "object": "Strategic_Goal__c"
+    }
+  },
+  "126": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "122",
+      "left_key": [
+        "Sub_Initiative__c"
+      ],
+      "right_select": [
+        "Initiative__c",
+        "of_Months_Missing_Interim_Target_Value__c",
+        "Active__c",
+        "CreatedDate",
+        "IsDeleted",
+        "Initiative_Number__c",
+        "LastModifiedDate",
+        "Metric_Reporting_Period__c",
+        "Metric_Source__c",
+        "Metric_Unit_Symbol__c",
+        "Minimum_Metric_Value__c",
+        "Point_of_Contact_Email__c",
+        "Id",
+        "Sub_Initiative_Number_Full__c",
+        "Sub_Initiative_Description__c",
+        "Sub_Initiative_End_Date__c",
+        "Sub_Initiative_Full_Number__c",
+        "Sub_Initiative_Metric__c",
+        "Name",
+        "Sub_Initiative_Number__c",
+        "Sub_Initiative_Start_Date__c",
+        "SystemModstamp"
+      ],
+      "right": "123",
+      "relationship": "Sub_Initiative__c"
+    }
+  },
+  "127": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "126",
+      "left_key": [
+        "Sub_Initiative__c.Initiative__c"
+      ],
+      "right_select": [
+        "of_Months_Missing_Interim_Target_Value__c",
+        "of_Sub_Initiatives__c",
+        "of_Sub_Initiatives_2__c",
+        "Accountable_Owner_Email__c",
+        "Active__c",
+        "CreatedDate",
+        "IsDeleted",
+        "Executive_Liaison_Email__c",
+        "Initiative_End_Date__c",
+        "Initiative_Metric__c",
+        "Name",
+        "Initiative_Number__c",
+        "Initiative_Start_Date__c",
+        "Initiative_Type__c",
+        "LastActivityDate",
+        "LastModifiedDate",
+        "LastReferencedDate",
+        "LastViewedDate",
+        "Metric_Reporting_Period__c",
+        "Metric_Source__c",
+        "Metric_Unit_Symbol__c",
+        "Minimum_Metric_Value__c",
+        "Outcome_Statement__c",
+        "Project_Manager_Email__c",
+        "Id",
+        "Responsible_Owner_Email__c",
+        "Responsible_Office__c",
+        "Sponsor_Email__c",
+        "SystemModstamp",
+        "PSO_Comments__c",
+        "Strategic_Goal__c"
+      ],
+      "right": "124",
+      "relationship": "Sub_Initiative__c.Initiative__c"
+    }
+  },
+  "128": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "127",
+      "left_key": [
+        "Sub_Initiative__c.Initiative__c.Strategic_Goal__c"
+      ],
+      "right_select": [
+        "isActive__c",
+        "CreatedDate",
+        "IsDeleted",
+        "LastActivityDate",
+        "LastModifiedDate",
+        "LastReferencedDate",
+        "LastViewedDate",
+        "NumberOrder__c",
+        "Id",
+        "Name",
+        "SystemModstamp"
+      ],
+      "right": "125",
+      "relationship": "Sub_Initiative__c.Initiative__c.Strategic_Goal__c"
+    }
+  },
+  "129": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "MyVA Dashboard Sub-Initiatives with Monthly",
+      "alias": "MyVA_Dashboard_Sub_Initiatives_with_Monthly",
+      "source": "128"
+    }
+  },
+  "130": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Sub_Initiative__c"
+        },
+        {
+          "name": "to_Target__c"
+        },
+        {
+          "name": "Accountable_Owner__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "Current_FY__c"
+        },
+        {
+          "name": "Data_Not_Available__c"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Funding__c"
+        },
+        {
+          "name": "FY_Target_Value__c"
+        },
+        {
+          "name": "General_Comments__c"
+        },
+        {
+          "name": "Input_Month__c"
+        },
+        {
+          "name": "Interim_Target_Value__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "Metric_Reporting_Period__c"
+        },
+        {
+          "name": "Metric_Source__c"
+        },
+        {
+          "name": "Milestones_Completed_Upcoming__c"
+        },
+        {
+          "name": "Metric_Value__c"
+        },
+        {
+          "name": "On_Off_Track__c"
+        },
+        {
+          "name": "Point_of_Contact__c"
+        },
+        {
+          "name": "Policy__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Requests_Actions_for_Leadership__c"
+        },
+        {
+          "name": "Risks__c"
+        },
+        {
+          "name": "Staffing__c"
+        },
+        {
+          "name": "Phase_Transition_Date__c"
+        },
+        {
+          "name": "Status__c"
+        },
+        {
+          "name": "Sub_Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Sub_Initiative_Phase__c"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "Technology__c"
+        }
+      ],
+      "object": "Sub_Initiative_Monthly_Entry__c"
+    }
+  },
+  "131": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Initiative__c"
+        },
+        {
+          "name": "of_Months_Missing_Interim_Target_Value__c"
+        },
+        {
+          "name": "Active__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Initiative_Number__c"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "Metric_Reporting_Period__c"
+        },
+        {
+          "name": "Metric_Source__c"
+        },
+        {
+          "name": "Metric_Unit_Symbol__c"
+        },
+        {
+          "name": "Minimum_Metric_Value__c"
+        },
+        {
+          "name": "Point_of_Contact_Email__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Sub_Initiative_Number_Full__c"
+        },
+        {
+          "name": "Sub_Initiative_Description__c"
+        },
+        {
+          "name": "Sub_Initiative_End_Date__c"
+        },
+        {
+          "name": "Sub_Initiative_Full_Number__c"
+        },
+        {
+          "name": "Sub_Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Sub_Initiative_Number__c"
+        },
+        {
+          "name": "Sub_Initiative_Start_Date__c"
+        },
+        {
+          "name": "SystemModstamp"
+        }
+      ],
+      "object": "Sub_Initiative__c"
+    }
+  },
+  "132": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "of_Months_Missing_Interim_Target_Value__c"
+        },
+        {
+          "name": "of_Sub_Initiatives__c"
+        },
+        {
+          "name": "of_Sub_Initiatives_2__c"
+        },
+        {
+          "name": "Accountable_Owner_Email__c"
+        },
+        {
+          "name": "Active__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Executive_Liaison_Email__c"
+        },
+        {
+          "name": "Initiative_End_Date__c"
+        },
+        {
+          "name": "Initiative_Metric__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Initiative_Number__c"
+        },
+        {
+          "name": "Initiative_Start_Date__c"
+        },
+        {
+          "name": "Initiative_Type__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "Metric_Reporting_Period__c"
+        },
+        {
+          "name": "Metric_Source__c"
+        },
+        {
+          "name": "Metric_Unit_Symbol__c"
+        },
+        {
+          "name": "Minimum_Metric_Value__c"
+        },
+        {
+          "name": "Outcome_Statement__c"
+        },
+        {
+          "name": "Project_Manager_Email__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Responsible_Owner_Email__c"
+        },
+        {
+          "name": "Responsible_Office__c"
+        },
+        {
+          "name": "Sponsor_Email__c"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "PSO_Comments__c"
+        },
+        {
+          "name": "Strategic_Goal__c"
+        }
+      ],
+      "object": "Initiative__c"
+    }
+  },
+  "133": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "isActive__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "NumberOrder__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "SystemModstamp"
+        }
+      ],
+      "object": "Strategic_Goal__c"
+    }
+  },
+  "134": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "130",
+      "left_key": [
+        "Sub_Initiative__c"
+      ],
+      "right_select": [
+        "Initiative__c",
+        "of_Months_Missing_Interim_Target_Value__c",
+        "Active__c",
+        "CreatedDate",
+        "IsDeleted",
+        "Initiative_Number__c",
+        "LastModifiedDate",
+        "Metric_Reporting_Period__c",
+        "Metric_Source__c",
+        "Metric_Unit_Symbol__c",
+        "Minimum_Metric_Value__c",
+        "Point_of_Contact_Email__c",
+        "Id",
+        "Sub_Initiative_Number_Full__c",
+        "Sub_Initiative_Description__c",
+        "Sub_Initiative_End_Date__c",
+        "Sub_Initiative_Full_Number__c",
+        "Sub_Initiative_Metric__c",
+        "Name",
+        "Sub_Initiative_Number__c",
+        "Sub_Initiative_Start_Date__c",
+        "SystemModstamp"
+      ],
+      "right": "131",
+      "relationship": "Sub_Initiative__c"
+    }
+  },
+  "135": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "134",
+      "left_key": [
+        "Sub_Initiative__c.Initiative__c"
+      ],
+      "right_select": [
+        "of_Months_Missing_Interim_Target_Value__c",
+        "of_Sub_Initiatives__c",
+        "of_Sub_Initiatives_2__c",
+        "Accountable_Owner_Email__c",
+        "Active__c",
+        "CreatedDate",
+        "IsDeleted",
+        "Executive_Liaison_Email__c",
+        "Initiative_End_Date__c",
+        "Initiative_Metric__c",
+        "Name",
+        "Initiative_Number__c",
+        "Initiative_Start_Date__c",
+        "Initiative_Type__c",
+        "LastActivityDate",
+        "LastModifiedDate",
+        "LastReferencedDate",
+        "LastViewedDate",
+        "Metric_Reporting_Period__c",
+        "Metric_Source__c",
+        "Metric_Unit_Symbol__c",
+        "Minimum_Metric_Value__c",
+        "Outcome_Statement__c",
+        "Project_Manager_Email__c",
+        "Id",
+        "Responsible_Owner_Email__c",
+        "Responsible_Office__c",
+        "Sponsor_Email__c",
+        "SystemModstamp",
+        "PSO_Comments__c",
+        "Strategic_Goal__c"
+      ],
+      "right": "132",
+      "relationship": "Sub_Initiative__c.Initiative__c"
+    }
+  },
+  "136": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "135",
+      "left_key": [
+        "Sub_Initiative__c.Initiative__c.Strategic_Goal__c"
+      ],
+      "right_select": [
+        "isActive__c",
+        "CreatedDate",
+        "IsDeleted",
+        "LastActivityDate",
+        "LastModifiedDate",
+        "LastReferencedDate",
+        "LastViewedDate",
+        "NumberOrder__c",
+        "Id",
+        "Name",
+        "SystemModstamp"
+      ],
+      "right": "133",
+      "relationship": "Sub_Initiative__c.Initiative__c.Strategic_Goal__c"
+    }
+  },
+  "137": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "MyVA Dashboard Sub-Initiatives with Monthly",
+      "alias": "MyVA_Dashboard_Sub_Initiatives_with_Monthly1",
+      "source": "136"
+    }
+  },
+  "138": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Milestone__c"
+        },
+        {
+          "name": "Sub_Initiative__c"
+        }
+      ],
+      "object": "MyVADshbd_Milestone_Assignment__c"
+    }
+  },
+  "139": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Actual_Completion_Date__c"
+        },
+        {
+          "name": "Baseline_Completion_Date__c"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "Milestone_Description__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Planned_Completion_Date__c"
+        },
+        {
+          "name": "Start_Date__c"
+        },
+        {
+          "name": "Status__c"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "MyVADshbd_Milestone__c"
+    }
+  },
+  "140": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Active__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Initiative__c"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "Sub_Initiative__c"
+    }
+  },
+  "141": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Strategic_Goal__c"
+        }
+      ],
+      "object": "Initiative__c"
+    }
+  },
+  "142": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Name"
+        }
+      ],
+      "object": "Strategic_Goal__c"
+    }
+  },
+  "143": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "138",
+      "left_key": [
+        "Milestone__c"
+      ],
+      "right_select": [
+        "Actual_Completion_Date__c",
+        "Baseline_Completion_Date__c",
+        "LastModifiedDate",
+        "Milestone_Description__c",
+        "Name",
+        "Planned_Completion_Date__c",
+        "Start_Date__c",
+        "Status__c"
+      ],
+      "right": "139",
+      "relationship": "Milestone__c"
+    }
+  },
+  "144": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "143",
+      "left_key": [
+        "Sub_Initiative__c"
+      ],
+      "right_select": [
+        "Active__c",
+        "Name",
+        "Initiative__c",
+        "Id"
+      ],
+      "right": "140",
+      "relationship": "Sub_Initiative__c"
+    }
+  },
+  "145": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "144",
+      "left_key": [
+        "Sub_Initiative__c.Initiative__c"
+      ],
+      "right_select": [
+        "Name",
+        "Id",
+        "Strategic_Goal__c"
+      ],
+      "right": "141",
+      "relationship": "Sub_Initiative__c.Initiative__c"
+    }
+  },
+  "146": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "145",
+      "left_key": [
+        "Sub_Initiative__c.Initiative__c.Strategic_Goal__c"
+      ],
+      "right_select": [
+        "Id",
+        "Name"
+      ],
+      "right": "142",
+      "relationship": "Sub_Initiative__c.Initiative__c.Strategic_Goal__c"
+    }
+  },
+  "147": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Mod Milestones",
+      "alias": "Mod_Milestones1",
+      "source": "146"
+    }
+  },
+  "148": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Email"
+        },
+        {
+          "name": "VBA_ERP_Employee_Position__c"
+        },
+        {
+          "name": "Employment_Type__c"
+        },
+        {
+          "name": "Name"
+        }
+      ],
+      "object": "Contact"
+    }
+  },
+  "149": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Contacts",
+      "alias": "Contacts",
+      "source": "148"
+    }
+  },
+  "150": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Alias"
+        },
+        {
+          "name": "IsActive"
+        },
+        {
+          "name": "CompanyName"
+        },
+        {
+          "name": "Email"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "LastLoginDate"
+        },
+        {
+          "name": "CommunityNickname"
+        },
+        {
+          "name": "SmallPhotoUrl"
+        },
+        {
+          "name": "Title"
+        },
+        {
+          "name": "Username"
+        }
+      ],
+      "object": "User"
+    }
+  },
+  "151": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Users",
+      "alias": "Users",
+      "source": "150"
+    }
+  },
+  "augment_UserRole_0": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_Profile_0",
+      "left_key": [
+        "AssigneeId.UserRoleId"
+      ],
+      "right_select": [
+        "Name",
+        "PortalType"
+      ],
+      "right": "sfdcDigest_UserRole",
+      "relationship": "AssigneeId.UserRoleId"
+    }
+  },
+  "sfdcDigest_PermissionSetAssignment": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "PermissionSetId"
+        },
+        {
+          "name": "AssigneeId"
+        }
+      ],
+      "object": "PermissionSetAssignment"
+    }
+  },
+  "register_PermissionSet License _0": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "PermissionSet License ",
+      "alias": "PermissionSet_License",
+      "source": "augment_UserRole_0"
+    }
+  },
+  "augment_Contact_User_1": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "sfdcDigest_Contact_1",
+      "left_key": [
+        "User_ID__c"
+      ],
+      "right_select": [
+        "AboutMe",
+        "IsActive",
+        "Alias",
+        "CountryCode",
+        "City",
+        "Comments__c",
+        "agf__Certified_Product_Owner__c",
+        "CreatedDate",
+        "CompanyName",
+        "Country",
+        "Department",
+        "Division",
+        "Email",
+        "EmployeeNumber",
+        "Extension",
+        "FirstName",
+        "License_Name__c",
+        "Name",
+        "UserPermissionsKnowledgeUser",
+        "LanguageLocaleKey",
+        "LastName",
+        "MiddleName",
+        "CommunityNickname",
+        "PortalRole",
+        "FederationIdentifier",
+        "Title",
+        "Street",
+        "State",
+        "Id",
+        "UserType",
+        "Username",
+        "PostalCode",
+        "Unique_User__c",
+        "ProfileId",
+        "UserRoleId"
+      ],
+      "right": "sfdcDigest_User",
+      "relationship": "User_ID__c"
+    }
+  },
+  "sfdcDigest_PermissionSet": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Label"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "PermissionSet"
+    }
+  },
+  "augment_Profile": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_User",
+      "left_key": [
+        "AssigneeId.ProfileId"
+      ],
+      "right_select": [
+        "Name",
+        "Id"
+      ],
+      "right": "sfdcDigest_Profile",
+      "relationship": "AssigneeId.ProfileId"
+    }
+  },
+  "sfdcDigest_Contact_1": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "User_ID__c"
+        },
+        {
+          "name": "FirstName"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "VBA_CL_Facility_Name__c"
+        },
+        {
+          "name": "CRM_Name__c"
+        },
+        {
+          "name": "CISCO_Name__c"
+        },
+        {
+          "name": "AssistantName"
+        },
+        {
+          "name": "LastName"
+        },
+        {
+          "name": "MiddleName"
+        },
+        {
+          "name": "Name_Office__c"
+        },
+        {
+          "name": "Verint_Name__c"
+        },
+        {
+          "name": "SharePoint_Name__c"
+        },
+        {
+          "name": "Federation_Id__c"
+        },
+        {
+          "name": "VBA_QMS_Admin__c"
+        },
+        {
+          "name": "VBA_QMS_Coach_Team__c"
+        },
+        {
+          "name": "VBA_QMS_Coach__c"
+        },
+        {
+          "name": "VBA_QMS_User__c"
+        },
+        {
+          "name": "Division__c"
+        },
+        {
+          "name": "VBA_ERP_Am_I_The_Supervisor__c"
+        },
+        {
+          "name": "VBA_ERP_Is_this_my_Division__c"
+        },
+        {
+          "name": "Call_Center__c"
+        },
+        {
+          "name": "Jigsaw"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "VBA_ERP_Cost_Code__c"
+        },
+        {
+          "name": "VBA_ERP_Cost_Center__c"
+        },
+        {
+          "name": "VBA_ERP_Cost_Center_CD__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "Email"
+        },
+        {
+          "name": "VBA_ERP_District_Office__c"
+        },
+        {
+          "name": "Department"
+        },
+        {
+          "name": "MailingCity"
+        },
+        {
+          "name": "Employee_Status__c"
+        },
+        {
+          "name": "VBA_ERP_Work_Type__c"
+        },
+        {
+          "name": "Views_Type__c"
+        },
+        {
+          "name": "CF_VIEWS_Contact__c"
+        },
+        {
+          "name": "ExAM__Contact_External_Id__c"
+        }
+      ],
+      "object": "Contact"
+    }
+  },
+  "augment_PermissionSetLicenseAssign_PermissionSetLicense_0": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "sfdcDigest_PermissionSetLicenseAssign_0",
+      "left_key": [
+        "PermissionSetLicenseId"
+      ],
+      "right_select": [
+        "MasterLabel"
+      ],
+      "right": "sfdcDigest_PermissionSetLicense_0",
+      "relationship": "PermissionSetLicenseId"
+    }
+  },
+  "sfdcDigest_PermissionSetLicenseAssign_0": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Id"
+        },
+        {
+          "name": "PermissionSetLicenseId"
+        },
+        {
+          "name": "AssigneeId"
+        }
+      ],
+      "object": "PermissionSetLicenseAssign"
+    }
+  },
+  "sfdcDigest_PermissionSetLicense_0": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "MasterLabel"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "PermissionSetLicense"
+    }
+  },
+  "register_UserContact_1": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "UserContact",
+      "alias": "UserContact",
+      "source": "augment_Contact_User_1"
+    }
+  },
+  "sfdcDigest_User": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "AboutMe"
+        },
+        {
+          "name": "IsActive"
+        },
+        {
+          "name": "Alias"
+        },
+        {
+          "name": "CountryCode"
+        },
+        {
+          "name": "City"
+        },
+        {
+          "name": "Comments__c"
+        },
+        {
+          "name": "agf__Certified_Product_Owner__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "CompanyName"
+        },
+        {
+          "name": "Country"
+        },
+        {
+          "name": "Department"
+        },
+        {
+          "name": "Division"
+        },
+        {
+          "name": "Email"
+        },
+        {
+          "name": "EmployeeNumber"
+        },
+        {
+          "name": "Extension"
+        },
+        {
+          "name": "FirstName"
+        },
+        {
+          "name": "License_Name__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "UserPermissionsKnowledgeUser"
+        },
+        {
+          "name": "LanguageLocaleKey"
+        },
+        {
+          "name": "LastName"
+        },
+        {
+          "name": "MiddleName"
+        },
+        {
+          "name": "CommunityNickname"
+        },
+        {
+          "name": "PortalRole"
+        },
+        {
+          "name": "FederationIdentifier"
+        },
+        {
+          "name": "Title"
+        },
+        {
+          "name": "Street"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "UserType"
+        },
+        {
+          "name": "Username"
+        },
+        {
+          "name": "PostalCode"
+        },
+        {
+          "name": "Unique_User__c"
+        },
+        {
+          "name": "ProfileId"
+        },
+        {
+          "name": "UserRoleId"
+        }
+      ],
+      "object": "User"
+    }
+  },
+  "augment_User": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_PermissionSetAssignment_PermissionSet",
+      "left_key": [
+        "AssigneeId"
+      ],
+      "right_select": [
+        "AboutMe",
+        "IsActive",
+        "Alias",
+        "CountryCode",
+        "City",
+        "Comments__c",
+        "agf__Certified_Product_Owner__c",
+        "CreatedDate",
+        "CompanyName",
+        "Country",
+        "Department",
+        "Division",
+        "Email",
+        "EmployeeNumber",
+        "Extension",
+        "FirstName",
+        "License_Name__c",
+        "Name",
+        "UserPermissionsKnowledgeUser",
+        "LanguageLocaleKey",
+        "LastName",
+        "MiddleName",
+        "CommunityNickname",
+        "PortalRole",
+        "FederationIdentifier",
+        "Title",
+        "Street",
+        "State",
+        "Id",
+        "UserType",
+        "Username",
+        "PostalCode",
+        "Unique_User__c",
+        "ProfileId",
+        "UserRoleId"
+      ],
+      "right": "sfdcDigest_User",
+      "relationship": "AssigneeId"
+    }
+  },
+  "augment_PermissionSetAssignment_PermissionSet": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "sfdcDigest_PermissionSetAssignment",
+      "left_key": [
+        "PermissionSetId"
+      ],
+      "right_select": [
+        "Label",
+        "Name"
+      ],
+      "right": "sfdcDigest_PermissionSet",
+      "relationship": "PermissionSetId"
+    }
+  },
+  "augment_User_0": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_PermissionSetLicenseAssign_PermissionSetLicense_0",
+      "left_key": [
+        "AssigneeId"
+      ],
+      "right_select": [
+        "AboutMe",
+        "IsActive",
+        "Alias",
+        "CountryCode",
+        "City",
+        "Comments__c",
+        "agf__Certified_Product_Owner__c",
+        "CreatedDate",
+        "CompanyName",
+        "Country",
+        "Department",
+        "Division",
+        "Email",
+        "EmployeeNumber",
+        "Extension",
+        "FirstName",
+        "License_Name__c",
+        "Name",
+        "UserPermissionsKnowledgeUser",
+        "LanguageLocaleKey",
+        "LastName",
+        "MiddleName",
+        "CommunityNickname",
+        "PortalRole",
+        "FederationIdentifier",
+        "Title",
+        "Street",
+        "State",
+        "Id",
+        "UserType",
+        "Username",
+        "PostalCode",
+        "Unique_User__c",
+        "ProfileId",
+        "UserRoleId"
+      ],
+      "right": "sfdcDigest_User",
+      "relationship": "AssigneeId"
+    }
+  },
+  "augment_Profile_0": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_User_0",
+      "left_key": [
+        "AssigneeId.ProfileId"
+      ],
+      "right_select": [
+        "Name"
+      ],
+      "right": "sfdcDigest_Profile",
+      "relationship": "AssigneeId.ProfileId"
+    }
+  },
+  "register_PermissionSet": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "PermissionSet",
+      "alias": "PermissionSet",
+      "source": "augment_UserRole"
+    }
+  },
+  "sfdcDigest_UserRole": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Name"
+        },
+        {
+          "name": "PortalRole"
+        },
+        {
+          "name": "PortalType"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "UserRole"
+    }
+  },
+  "sfdcDigest_Profile": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "Profile"
+    }
+  },
+  "augment_UserRole": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_Profile",
+      "left_key": [
+        "AssigneeId.UserRoleId"
+      ],
+      "right_select": [
+        "Name",
+        "PortalRole",
+        "PortalType"
+      ],
+      "right": "sfdcDigest_UserRole",
+      "relationship": "AssigneeId.UserRoleId"
+    }
+  },
+  "sfdcDigest_User_1": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "AboutMe"
+        },
+        {
+          "name": "IsActive"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "User"
+    }
+  },
+  "Extract_StrategicPartnership": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Account_Name__c"
+        },
+        {
+          "name": "Administration__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Field_or_Administration__c"
+        },
+        {
+          "name": "Issue_Areas__c"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "Launch_Date__c"
+        },
+        {
+          "name": "MOU_or_MOA__c"
+        },
+        {
+          "name": "Name_of_Partnering_Organization__c"
+        },
+        {
+          "name": "Office_or_Facility__c"
+        },
+        {
+          "name": "Partner_Organization_Street_Address__c"
+        },
+        {
+          "name": "Partner_POC__c"
+        },
+        {
+          "name": "Partner_POC_Email__c"
+        },
+        {
+          "name": "Partner_POC_Phone__c"
+        },
+        {
+          "name": "Partner_POC_Title__c"
+        },
+        {
+          "name": "Partnering_Organization_City__c"
+        },
+        {
+          "name": "Partnering_Organization_State__c"
+        },
+        {
+          "name": "Partnering_Organization_Zip_Code__c"
+        },
+        {
+          "name": "Partnership_Area_Not_Listed__c"
+        },
+        {
+          "name": "Partnership_Description__c"
+        },
+        {
+          "name": "Partnership_Happening_City__c"
+        },
+        {
+          "name": "Partnership_Happening_State__c"
+        },
+        {
+          "name": "Partnership_Happening_Street__c"
+        },
+        {
+          "name": "Partnership_Happening_Zip_Code__c"
+        },
+        {
+          "name": "Partnership_Location_Address__c"
+        },
+        {
+          "name": "Partnership_Name__c"
+        },
+        {
+          "name": "Partnership_Services__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "VA_Partner_POC__c"
+        },
+        {
+          "name": "VA_Partner_POC_Email__c"
+        },
+        {
+          "name": "VA_Partner_POC_Phone__c"
+        },
+        {
+          "name": "VA_Partner_POC_Title__c"
+        },
+        {
+          "name": "VISN__c"
+        }
+      ],
+      "object": "Strategic_Partnership__c"
+    }
+  },
+  "100_Digest_SurveyParticipant": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Ability__c"
+        },
+        {
+          "name": "Ability_Score__c"
+        },
+        {
+          "name": "Ability_Combined__c"
+        },
+        {
+          "name": "Ability_Sorted__c"
+        },
+        {
+          "name": "Activity__c"
+        },
+        {
+          "name": "Activity_Score__c"
+        },
+        {
+          "name": "Activity_Combined__c"
+        },
+        {
+          "name": "Activity_Sorted__c"
+        },
+        {
+          "name": "Administration__c"
+        },
+        {
+          "name": "Assignment_URL__c"
+        },
+        {
+          "name": "Awareness__c"
+        },
+        {
+          "name": "Awareness_Score__c"
+        },
+        {
+          "name": "Awareness_Combined__c"
+        },
+        {
+          "name": "Awareness_Sorted__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "Customer__c"
+        },
+        {
+          "name": "Customer_Score__c"
+        },
+        {
+          "name": "Customer_Combined__c"
+        },
+        {
+          "name": "Customer_Sorted__c"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Desire__c"
+        },
+        {
+          "name": "Desire_Score__c"
+        },
+        {
+          "name": "Desire_Combined__c"
+        },
+        {
+          "name": "Desire_Sorted__c"
+        },
+        {
+          "name": "Employee_Type__c"
+        },
+        {
+          "name": "Impact__c"
+        },
+        {
+          "name": "Impact_Score__c"
+        },
+        {
+          "name": "Impact_Combined__c"
+        },
+        {
+          "name": "Impact_Sorted__c"
+        },
+        {
+          "name": "Is_A_B_Testing_Toggle_Enabled__c"
+        },
+        {
+          "name": "Knowledge__c"
+        },
+        {
+          "name": "Knowledge_Score__c"
+        },
+        {
+          "name": "Knowledge_Combined__c"
+        },
+        {
+          "name": "Knowledge_Sorted__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "Mission__c"
+        },
+        {
+          "name": "Mission_Score__c"
+        },
+        {
+          "name": "Mission_Combined__c"
+        },
+        {
+          "name": "Mission_Sorted__c"
+        },
+        {
+          "name": "Occupation__c"
+        },
+        {
+          "name": "Office_or_Facility__c"
+        },
+        {
+          "name": "Office_or_Facility_Type__c"
+        },
+        {
+          "name": "Partnering_Point_of_Contact__c"
+        },
+        {
+          "name": "Partnering_Point_of_Contact_Title__c"
+        },
+        {
+          "name": "Pay_Grade__c"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Reinforcement__c"
+        },
+        {
+          "name": "Reinforcement_Score__c"
+        },
+        {
+          "name": "Reinforcement_Combined__c"
+        },
+        {
+          "name": "Reinforcement_Sorted__c"
+        },
+        {
+          "name": "State_or_Territory__c"
+        },
+        {
+          "name": "Survey_Identifier__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "Telework_Status__c"
+        },
+        {
+          "name": "Value__c"
+        },
+        {
+          "name": "Value_Score__c"
+        },
+        {
+          "name": "Value_Combined__c"
+        },
+        {
+          "name": "Value_Sorted__c"
+        },
+        {
+          "name": "Witness__c"
+        },
+        {
+          "name": "Witness_Score__c"
+        },
+        {
+          "name": "Witness_Combined__c"
+        },
+        {
+          "name": "Witness_Sorted__c"
+        },
+        {
+          "name": "Positive_Leadership__c"
+        },
+        {
+          "name": "Project_Status__c"
+        },
+        {
+          "name": "Supervisor_LDL__c"
+        },
+        {
+          "name": "VA_101__c"
+        },
+        {
+          "name": "Participated_in_LDL__c"
+        },
+        {
+          "name": "Comments__c"
+        },
+        {
+          "name": "Modified_Date__c"
+        },
+        {
+          "name": "District__c"
+        },
+        {
+          "name": "VISN__c"
+        },
+        {
+          "name": "PiP_Project__c"
+        },
+        {
+          "name": "PiP_Project_Assoc__c"
+        },
+        {
+          "name": "PiP_Team_Dynamic__c"
+        },
+        {
+          "name": "PiP_Past_Project__c"
+        },
+        {
+          "name": "PiP_Pst_Prj_Outcome__c"
+        },
+        {
+          "name": "PiP_Pst_Prj_Conclude__c"
+        },
+        {
+          "name": "Satisfied_Contracting__c"
+        },
+        {
+          "name": "Satisfied_Finance__c"
+        },
+        {
+          "name": "Satisfied_HR__c"
+        },
+        {
+          "name": "Satisfied_IT__c"
+        },
+        {
+          "name": "Satisfied_Property__c"
+        },
+        {
+          "name": "Tags_for_Improvement__c"
+        },
+        {
+          "name": "Tags_Improved__c"
+        },
+        {
+          "name": "Answer_Status__c"
+        },
+        {
+          "name": "Is_Comments_Populated__c"
+        },
+        {
+          "name": "PiPStandardProcess__c"
+        },
+        {
+          "name": "PITools__c"
+        },
+        {
+          "name": "PiPReviewPeriod__c"
+        },
+        {
+          "name": "PiPLeadershipSelects__c"
+        },
+        {
+          "name": "OTMTraining__c"
+        },
+        {
+          "name": "Shulkin_Priorities__c"
+        },
+        {
+          "name": "Communication_Impression__c"
+        },
+        {
+          "name": "Improved_Agreement__c"
+        },
+        {
+          "name": "Modernization__c"
+        },
+        {
+          "name": "Modernization_OnBoard__c"
+        },
+        {
+          "name": "EHRm_Desire_1__c"
+        },
+        {
+          "name": "EHRmAware2CommSource__c"
+        },
+        {
+          "name": "EHRm_Awareness_1__c"
+        },
+        {
+          "name": "WorkWithVetHealthInfo__c"
+        },
+        {
+          "name": "EHRm_Awareness_2__c"
+        },
+        {
+          "name": "EHRm_Desire_2__c"
+        },
+        {
+          "name": "EHRm_Knowledge__c"
+        },
+        {
+          "name": "EHRm_Ability__c"
+        },
+        {
+          "name": "EHRm_Reinforcement__c"
+        },
+        {
+          "name": "Timely_Checkin__c"
+        },
+        {
+          "name": "Org_Admitting__c"
+        },
+        {
+          "name": "Vet_Respect__c"
+        },
+        {
+          "name": "Positive_Vets__c"
+        },
+        {
+          "name": "Nav_Assist__c"
+        },
+        {
+          "name": "Standard_Phone__c"
+        },
+        {
+          "name": "Leadership_Follow_up__c"
+        },
+        {
+          "name": "Chief_Rounding__c"
+        },
+        {
+          "name": "Facility_Standard_Signs__c"
+        }
+      ],
+      "object": "Survey_Particpant__c"
+    }
+  },
+  "Register_StrategicPartnership": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "StrategicPartnership",
+      "alias": "StrategicPartnership",
+      "source": "Extract_StrategicPartnership"
+    }
+  },
+  "sfdcDigest_Group_1": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Type"
+        },
+        {
+          "name": "Email"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "Group"
+    }
+  },
+  "sfdcDigest_GroupMember_1": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Id"
+        },
+        {
+          "name": "GroupId"
+        },
+        {
+          "name": "UserOrGroupId"
+        }
+      ],
+      "object": "GroupMember"
+    }
+  },
+  "register_PublicGroups_1": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "PublicGroups",
+      "alias": "PublicGroups",
+      "source": "augment_User_1"
+    }
+  },
+  "augment_GroupMember_Group_1": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "sfdcDigest_GroupMember_1",
+      "left_key": [
+        "GroupId"
+      ],
+      "right_select": [
+        "Name",
+        "Type",
+        "Email"
+      ],
+      "right": "sfdcDigest_Group_1",
+      "relationship": "GroupId"
+    }
+  },
+  "augment_User_1": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_GroupMember_Group_1",
+      "left_key": [
+        "UserOrGroupId"
+      ],
+      "right_select": [
+        "AboutMe",
+        "IsActive"
+      ],
+      "right": "sfdcDigest_User_1",
+      "relationship": "UserOrGroupId"
+    }
+  },
+  "101_Register_ContinuousSurveyData": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Continuous Survey Data",
+      "alias": "continuousSurveyData",
+      "source": "100_Digest_SurveyParticipant"
+    }
+  },
+  "Register_APG_SurveyData": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Comment__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "IsDeleted"
+        },
+        {
+          "name": "Ease__c"
+        },
+        {
+          "name": "Effectiveness__c"
+        },
+        {
+          "name": "Emotion__c"
+        },
+        {
+          "name": "LastActivityDate"
+        },
+        {
+          "name": "LastModifiedDate"
+        },
+        {
+          "name": "LastReferencedDate"
+        },
+        {
+          "name": "LastViewedDate"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "Survey_URL__c"
+        },
+        {
+          "name": "SystemModstamp"
+        },
+        {
+          "name": "Trust__c"
+        },
+        {
+          "name": "Administration__c"
+        },
+        {
+          "name": "Age__c"
+        },
+        {
+          "name": "Gender__c"
+        },
+        {
+          "name": "Location_of_Service__c"
+        },
+        {
+          "name": "Type_of_Service__c"
+        },
+        {
+          "name": "Avg_Score__c"
+        },
+        {
+          "name": "Ease_Score__c"
+        },
+        {
+          "name": "Effectiveness_Score__c"
+        },
+        {
+          "name": "Emotion_Score__c"
+        },
+        {
+          "name": "Trust_Score__c"
+        },
+        {
+          "name": "Overall_Status__c"
+        },
+        {
+          "name": "Age_Group__c"
+        }
+      ],
+      "object": "AGPSurveyParticipant__c"
+    }
+  },
+  "Extract_APG_SurveyData": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "APGSurvey",
+      "alias": "APGSurvey",
+      "source": "Register_APG_SurveyData"
+    }
+  }
+}

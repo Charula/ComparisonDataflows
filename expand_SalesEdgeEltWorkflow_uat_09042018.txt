@@ -1,0 +1,685 @@
+{
+  "148": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Email"
+        },
+        {
+          "name": "VBA_ERP_Employee_Position__c"
+        },
+        {
+          "name": "Employment_Type__c"
+        },
+        {
+          "name": "Name"
+        }
+      ],
+      "object": "Contact"
+    }
+  },
+  "149": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Contacts",
+      "alias": "Contacts",
+      "source": "148"
+    }
+  },
+  "150": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Alias"
+        },
+        {
+          "name": "IsActive"
+        },
+        {
+          "name": "CompanyName"
+        },
+        {
+          "name": "Email"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "LastLoginDate"
+        },
+        {
+          "name": "CommunityNickname"
+        },
+        {
+          "name": "SmallPhotoUrl"
+        },
+        {
+          "name": "Title"
+        },
+        {
+          "name": "Username"
+        }
+      ],
+      "object": "User"
+    }
+  },
+  "151": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Users",
+      "alias": "Users",
+      "source": "150"
+    }
+  },
+  "augment_UserRole_0": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_Profile_0",
+      "left_key": [
+        "AssigneeId.UserRoleId"
+      ],
+      "right_select": [
+        "Name",
+        "PortalType"
+      ],
+      "right": "sfdcDigest_UserRole",
+      "relationship": "AssigneeId.UserRoleId"
+    }
+  },
+  "sfdcDigest_PermissionSetAssignment": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "PermissionSetId"
+        },
+        {
+          "name": "AssigneeId"
+        }
+      ],
+      "object": "PermissionSetAssignment"
+    }
+  },
+  "register_PermissionSet License _0": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "PermissionSet License ",
+      "alias": "PermissionSet_License",
+      "source": "augment_UserRole_0"
+    }
+  },
+  "augment_Contact_User_1": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "sfdcDigest_Contact_1",
+      "left_key": [
+        "User_ID__c"
+      ],
+      "right_select": [
+        "AboutMe",
+        "IsActive",
+        "Alias",
+        "CountryCode",
+        "City",
+        "Comments__c",
+        "agf__Certified_Product_Owner__c",
+        "CreatedDate",
+        "CompanyName",
+        "Country",
+        "Department",
+        "Division",
+        "Email",
+        "EmployeeNumber",
+        "Extension",
+        "FirstName",
+        "License_Name__c",
+        "Name",
+        "UserPermissionsKnowledgeUser",
+        "LanguageLocaleKey",
+        "LastName",
+        "MiddleName",
+        "CommunityNickname",
+        "PortalRole",
+        "FederationIdentifier",
+        "Title",
+        "Street",
+        "State",
+        "Id",
+        "UserType",
+        "Username",
+        "PostalCode",
+        "Unique_User__c",
+        "ProfileId",
+        "UserRoleId"
+      ],
+      "right": "sfdcDigest_User",
+      "relationship": "User_ID__c"
+    }
+  },
+  "sfdcDigest_PermissionSet": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Label"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "PermissionSet"
+    }
+  },
+  "augment_Profile": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_User",
+      "left_key": [
+        "AssigneeId.ProfileId"
+      ],
+      "right_select": [
+        "Name",
+        "Id"
+      ],
+      "right": "sfdcDigest_Profile",
+      "relationship": "AssigneeId.ProfileId"
+    }
+  },
+  "sfdcDigest_Contact_1": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "User_ID__c"
+        },
+        {
+          "name": "FirstName"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "VBA_CL_Facility_Name__c"
+        },
+        {
+          "name": "CRM_Name__c"
+        },
+        {
+          "name": "CISCO_Name__c"
+        },
+        {
+          "name": "AssistantName"
+        },
+        {
+          "name": "LastName"
+        },
+        {
+          "name": "MiddleName"
+        },
+        {
+          "name": "Name_Office__c"
+        },
+        {
+          "name": "Verint_Name__c"
+        },
+        {
+          "name": "SharePoint_Name__c"
+        },
+        {
+          "name": "Federation_Id__c"
+        },
+        {
+          "name": "VBA_QMS_Admin__c"
+        },
+        {
+          "name": "VBA_QMS_Coach_Team__c"
+        },
+        {
+          "name": "VBA_QMS_Coach__c"
+        },
+        {
+          "name": "VBA_QMS_User__c"
+        },
+        {
+          "name": "Division__c"
+        },
+        {
+          "name": "VBA_ERP_Am_I_The_Supervisor__c"
+        },
+        {
+          "name": "VBA_ERP_Is_this_my_Division__c"
+        },
+        {
+          "name": "Call_Center__c"
+        },
+        {
+          "name": "Jigsaw"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "VBA_ERP_Cost_Code__c"
+        },
+        {
+          "name": "VBA_ERP_Cost_Center__c"
+        },
+        {
+          "name": "VBA_ERP_Cost_Center_CD__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "Email"
+        },
+        {
+          "name": "VBA_ERP_District_Office__c"
+        },
+        {
+          "name": "Department"
+        },
+        {
+          "name": "MailingCity"
+        },
+        {
+          "name": "Employee_Status__c"
+        },
+        {
+          "name": "VBA_ERP_Work_Type__c"
+        },
+        {
+          "name": "Views_Type__c"
+        },
+        {
+          "name": "CF_VIEWS_Contact__c"
+        },
+        {
+          "name": "ExAM__Contact_External_Id__c"
+        }
+      ],
+      "object": "Contact"
+    }
+  },
+  "augment_PermissionSetLicenseAssign_PermissionSetLicense_0": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "sfdcDigest_PermissionSetLicenseAssign_0",
+      "left_key": [
+        "PermissionSetLicenseId"
+      ],
+      "right_select": [
+        "MasterLabel"
+      ],
+      "right": "sfdcDigest_PermissionSetLicense_0",
+      "relationship": "PermissionSetLicenseId"
+    }
+  },
+  "sfdcDigest_PermissionSetLicenseAssign_0": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Id"
+        },
+        {
+          "name": "PermissionSetLicenseId"
+        },
+        {
+          "name": "AssigneeId"
+        }
+      ],
+      "object": "PermissionSetLicenseAssign"
+    }
+  },
+  "sfdcDigest_PermissionSetLicense_0": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "MasterLabel"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "PermissionSetLicense"
+    }
+  },
+  "register_UserContact_1": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "UserContact",
+      "alias": "UserContact",
+      "source": "augment_Contact_User_1"
+    }
+  },
+  "sfdcDigest_User": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "AboutMe"
+        },
+        {
+          "name": "IsActive"
+        },
+        {
+          "name": "Alias"
+        },
+        {
+          "name": "CountryCode"
+        },
+        {
+          "name": "City"
+        },
+        {
+          "name": "Comments__c"
+        },
+        {
+          "name": "agf__Certified_Product_Owner__c"
+        },
+        {
+          "name": "CreatedDate"
+        },
+        {
+          "name": "CompanyName"
+        },
+        {
+          "name": "Country"
+        },
+        {
+          "name": "Department"
+        },
+        {
+          "name": "Division"
+        },
+        {
+          "name": "Email"
+        },
+        {
+          "name": "EmployeeNumber"
+        },
+        {
+          "name": "Extension"
+        },
+        {
+          "name": "FirstName"
+        },
+        {
+          "name": "License_Name__c"
+        },
+        {
+          "name": "Name"
+        },
+        {
+          "name": "UserPermissionsKnowledgeUser"
+        },
+        {
+          "name": "LanguageLocaleKey"
+        },
+        {
+          "name": "LastName"
+        },
+        {
+          "name": "MiddleName"
+        },
+        {
+          "name": "CommunityNickname"
+        },
+        {
+          "name": "PortalRole"
+        },
+        {
+          "name": "FederationIdentifier"
+        },
+        {
+          "name": "Title"
+        },
+        {
+          "name": "Street"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Id"
+        },
+        {
+          "name": "UserType"
+        },
+        {
+          "name": "Username"
+        },
+        {
+          "name": "PostalCode"
+        },
+        {
+          "name": "Unique_User__c"
+        },
+        {
+          "name": "ProfileId"
+        },
+        {
+          "name": "UserRoleId"
+        }
+      ],
+      "object": "User"
+    }
+  },
+  "augment_User": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_PermissionSetAssignment_PermissionSet",
+      "left_key": [
+        "AssigneeId"
+      ],
+      "right_select": [
+        "AboutMe",
+        "IsActive",
+        "Alias",
+        "CountryCode",
+        "City",
+        "Comments__c",
+        "agf__Certified_Product_Owner__c",
+        "CreatedDate",
+        "CompanyName",
+        "Country",
+        "Department",
+        "Division",
+        "Email",
+        "EmployeeNumber",
+        "Extension",
+        "FirstName",
+        "License_Name__c",
+        "Name",
+        "UserPermissionsKnowledgeUser",
+        "LanguageLocaleKey",
+        "LastName",
+        "MiddleName",
+        "CommunityNickname",
+        "PortalRole",
+        "FederationIdentifier",
+        "Title",
+        "Street",
+        "State",
+        "Id",
+        "UserType",
+        "Username",
+        "PostalCode",
+        "Unique_User__c",
+        "ProfileId",
+        "UserRoleId"
+      ],
+      "right": "sfdcDigest_User",
+      "relationship": "AssigneeId"
+    }
+  },
+  "augment_PermissionSetAssignment_PermissionSet": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "sfdcDigest_PermissionSetAssignment",
+      "left_key": [
+        "PermissionSetId"
+      ],
+      "right_select": [
+        "Label",
+        "Name"
+      ],
+      "right": "sfdcDigest_PermissionSet",
+      "relationship": "PermissionSetId"
+    }
+  },
+  "augment_User_0": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_PermissionSetLicenseAssign_PermissionSetLicense_0",
+      "left_key": [
+        "AssigneeId"
+      ],
+      "right_select": [
+        "AboutMe",
+        "IsActive",
+        "Alias",
+        "CountryCode",
+        "City",
+        "Comments__c",
+        "agf__Certified_Product_Owner__c",
+        "CreatedDate",
+        "CompanyName",
+        "Country",
+        "Department",
+        "Division",
+        "Email",
+        "EmployeeNumber",
+        "Extension",
+        "FirstName",
+        "License_Name__c",
+        "Name",
+        "UserPermissionsKnowledgeUser",
+        "LanguageLocaleKey",
+        "LastName",
+        "MiddleName",
+        "CommunityNickname",
+        "PortalRole",
+        "FederationIdentifier",
+        "Title",
+        "Street",
+        "State",
+        "Id",
+        "UserType",
+        "Username",
+        "PostalCode",
+        "Unique_User__c",
+        "ProfileId",
+        "UserRoleId"
+      ],
+      "right": "sfdcDigest_User",
+      "relationship": "AssigneeId"
+    }
+  },
+  "augment_Profile_0": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_User_0",
+      "left_key": [
+        "AssigneeId.ProfileId"
+      ],
+      "right_select": [
+        "Name"
+      ],
+      "right": "sfdcDigest_Profile",
+      "relationship": "AssigneeId.ProfileId"
+    }
+  },
+  "register_PermissionSet": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "PermissionSet",
+      "alias": "PermissionSet",
+      "source": "augment_UserRole"
+    }
+  },
+  "sfdcDigest_UserRole": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Name"
+        },
+        {
+          "name": "PortalRole"
+        },
+        {
+          "name": "PortalType"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "UserRole"
+    }
+  },
+  "sfdcDigest_Profile": {
+    "action": "sfdcDigest",
+    "parameters": {
+      "fields": [
+        {
+          "name": "Name"
+        },
+        {
+          "name": "Id"
+        }
+      ],
+      "object": "Profile"
+    }
+  },
+  "augment_UserRole": {
+    "action": "augment",
+    "parameters": {
+      "right_key": [
+        "Id"
+      ],
+      "left": "augment_Profile",
+      "left_key": [
+        "AssigneeId.UserRoleId"
+      ],
+      "right_select": [
+        "Name",
+        "PortalRole",
+        "PortalType"
+      ],
+      "right": "sfdcDigest_UserRole",
+      "relationship": "AssigneeId.UserRoleId"
+    }
+  }
+}
